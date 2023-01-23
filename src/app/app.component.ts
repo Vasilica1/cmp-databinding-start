@@ -23,4 +23,12 @@ export class AppComponent {
       content: bluePrintData.serverContent
     });
   }
+
+  onChangeFirst() {
+    this.serverElements[0].name = 'Changed!';
+  }
+
+  onDestroyFrist() {
+    this.serverElements.splice(0, 1);
+  }
 }
